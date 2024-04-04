@@ -1,0 +1,7 @@
+{
+  "name": "CookBooklet",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
