@@ -1,17 +1,51 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-menu contentId="main-content">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title>Menu Content</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+  <ion-content class="ion-padding">
+    <ul>
+      <a href="/tabs/tab2"> Recipes</a>
+    </ul>
+    <ul>
+      <a href="/tabs/tab3"> Cooking Tips and Techniques</a>
+    </ul>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>CookBooklet</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-searchbar></ion-searchbar>
+    <br />
+    <br />
+    <ion-label>
+      <h1><strong>Top Recipes</strong></h1>
+    </ion-label>
+    <br />
+    <br />
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <img
+            src="https://houseofnasheats.com/wp-content/uploads/2021/11/Homemade-Cranberry-Sauce-4.jpg"
+            alt=""
+          />Cranberry Sauce</ion-col
+        >
+        <ion-col>
+          <img
+            src="https://saltandbaker.com/wp-content/uploads/2018/12/Soft-Gingerbread-Cookies-4-1.jpg"
+            alt=""
+          />Gingerbread Cookies</ion-col
+        >
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</div>
