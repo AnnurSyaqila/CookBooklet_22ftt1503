@@ -4,12 +4,15 @@
       <ion-title>Menu Content</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding">
+  <ion-content class="ion-padding" class="LGreen">
     <ul>
       <a href="/tabs/tab2"> Recipes</a>
     </ul>
     <ul>
       <a href="/tabs/tab3"> Cooking Tips and Techniques</a>
+    </ul>
+    <ul>
+      <a href="/tabs/tab4"> Recommended Recipe</a>
     </ul>
   </ion-content>
 </ion-menu>
@@ -24,6 +27,15 @@
   </ion-header>
   <ion-content class="ion-padding">
     <ion-searchbar></ion-searchbar>
+    <ion-button expand="block" (click)="showButtons()">
+      <ion-icon name="options-outline"></ion-icon>
+    </ion-button>
+
+    <!-- Hidden buttons initially -->
+    <ion-button expand="block" *ngIf="show">Dessert</ion-button>
+    <ion-button expand="block" *ngIf="show">Local</ion-button>
+    <ion-button expand="block" *ngIf="show">Popular</ion-button>
+
     <br />
     <br />
     <ion-label>

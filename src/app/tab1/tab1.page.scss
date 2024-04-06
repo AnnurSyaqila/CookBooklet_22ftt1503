@@ -5,6 +5,13 @@ ion-item {
 img{ border-radius: 30px; }
 
 
+ ion-button{
+  padding-left: 85%;
+  font-size: 20px;
+  color: black;
+  --background: #6AB29B;
+ }
 
-
-
+ ion-searchbar{
+  background-color: #6AB29B;
+ }
