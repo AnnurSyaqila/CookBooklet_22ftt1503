@@ -9,7 +9,7 @@ Project Setup:
 2) Install Dependencies 
 ``npm install``
 3)Environment Variables
-Copy the file to .env and update the variables as necessary.
+- Copy the file to .env and update the variables as necessary.
 
 Usage Instruction: 
 1) Development Mode
