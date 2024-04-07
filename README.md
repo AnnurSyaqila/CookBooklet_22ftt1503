@@ -41,7 +41,8 @@ For any questions or concerns regarding the project, please contact [Annur Syaqi
 Acknowledgements:
 I would like to thank the following individuals for the contributions to the project:
     [Sir Bahit Hamid]
-Thank you sir for guiding us throughout the semester, without your help, we wouldnt be here. 
-Thank you for being patience whenever we're struggling and teaching us step by step and pushing us to be best version of ourselves. 
+- Thank you sir for guiding us throughout the semester, without your help, we wouldnt be here.
+  
+- Thank you for being patience whenever we're struggling and teaching us step by step and pushing us to be best version of ourselves. 
 
 Lastly I'd like to thank myself, for not giving up.
