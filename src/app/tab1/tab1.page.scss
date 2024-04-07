@@ -13,5 +13,10 @@ img{ border-radius: 30px; }
  }
 
  ion-searchbar{
-  background-color: #6AB29B;
+  --background-color: #6AB29B;
+ }
+
+ ion-toolbar{
+  --background: #6AB29B;
+  color: black;
  }
