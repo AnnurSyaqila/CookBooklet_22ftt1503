@@ -15,7 +15,7 @@
   </ion-card-subtitle>
   <!-- </ion-header> -->
 
-  <ion-card>
+  <ion-card class="custom">
     <ion-card-content>
       <ion-list>
         <!-- Thanksgiving -->
@@ -38,17 +38,12 @@
             *ngIf="showThanksgivingSubList"
           ></ion-icon>
         </ion-item>
-        <ion-item
-          *ngIf="showThanksgivingSubList"
-          (click)="toggleRTurkeyRecipe()"
-        >
-          Roasted Turkey
+        <ion-item *ngIf="showThanksgivingSubList">
+          <a href="/turkey">Roasted Turkey</a>
         </ion-item>
 
-        <ion-item
-          *ngIf="showThanksgivingSubList"
-          (click)="toggleCranberrySauceRecipe()"
-          >Cranberry Sauce
+        <ion-item *ngIf="showThanksgivingSubList"
+          ><a href="/cranberry">Cranberry Sauce</a>
         </ion-item>
 
         <!-- Christmas -->
@@ -71,12 +66,12 @@
             *ngIf="showChristmasSubList"
           ></ion-icon>
         </ion-item>
-        <ion-item *ngIf="showChristmasSubList" (click)="toggleCookiesRecipe()">
-          Gingerbread Cookies
+        <ion-item *ngIf="showChristmasSubList">
+          <a href="/cookies">Gingerbread Cookies </a>
         </ion-item>
 
-        <ion-item *ngIf="showChristmasSubList" (click)="toggleBeefRecipe()">
-          Roast Beef with Red Wine Sauce
+        <ion-item *ngIf="showChristmasSubList">
+          <a href="/beef"> Roast Beef with Red Wine Sauce</a>
         </ion-item>
 
         <!-- Halloween -->
@@ -91,7 +86,7 @@
         </ion-item>
 
         <!-- Eidul Fitri  -->
-        <ion-item (click)="toggleKetupatSubList()">
+        <ion-item (click)="toggleFitriSubList()">
           <ion-thumbnail slot="start">
             <img
               alt="Eidul Fitri"
@@ -111,12 +106,12 @@
           ></ion-icon>
         </ion-item>
 
-        <ion-item *ngIf="showFitriSubList" (click)="toggleKetupatRecipe()">
-          Ketupat
+        <ion-item *ngIf="showFitriSubList">
+          <a href="/ketupat">Ketupat</a>
         </ion-item>
 
-        <ion-item *ngIf="showFitriSubList" (click)="toggleWajidRecipe()">
-          Wajid
+        <ion-item *ngIf="showFitriSubList">
+          <a href="/wajid">Wajid</a>
         </ion-item>
       </ion-list>
     </ion-card-content>

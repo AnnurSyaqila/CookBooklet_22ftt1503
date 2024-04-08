@@ -10,12 +10,6 @@ export class Tab2Page {
   showThanksgivingSubList: boolean = false;
   showChristmasSubList: boolean = false;
   showFitriSubList: boolean = false;
-  showRTurkeyRecipe: boolean = false;
-  showCranberrySauceRecipe: boolean = false;
-  showCookiesRecipe: boolean = false;
-  showBeefRecipe: boolean = false;
-  showKetuPatRecipe: boolean = false;
-  showWajidRecipe: boolean = false;
 
   toggleThanksgivingSubList() {
     this.showThanksgivingSubList = !this.showThanksgivingSubList;
@@ -25,32 +19,8 @@ export class Tab2Page {
     this.showChristmasSubList = !this.showChristmasSubList;
   }
 
-  toggleKetupatSubList() {
+  toggleFitriSubList() {
     this.showFitriSubList = !this.showFitriSubList;
-  }
-
-  toggleRTurkeyRecipe() {
-    this.showRTurkeyRecipe = !this.showRTurkeyRecipe;
-  }
-
-  toggleCranberrySauceRecipe() {
-    this.showCranberrySauceRecipe = !this.showCranberrySauceRecipe;
-  }
-
-  toggleCookiesRecipe() {
-    this.showCookiesRecipe = !this.showCookiesRecipe;
-  }
-
-  toggleBeefRecipe() {
-    this.showBeefRecipe = !this.showBeefRecipe;
-  }
-
-  toggleKetupatRecipe() {
-    this.showKetuPatRecipe = !this.showKetuPatRecipe;
-  }
-
-  toggleWajidRecipe() {
-    this.showWajidRecipe = !this.showWajidRecipe;
   }
 
   constructor(public alertController: AlertController) {}
