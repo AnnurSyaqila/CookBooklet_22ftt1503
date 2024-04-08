@@ -1,6 +1,10 @@
 # CookBooklet Recipe App
 
 - the purpose of this project is to create a user-friendly recipe app that provide festive recipes and cooking tips suitable for beginner and other individual with different level of cooking experience. 
+- On Main page, it offer a filter that will filter an option for user (Dessert, Local & Popular) , Top Recipes image are featured that are clickable that bring directly to the recipe. A menu toolbar has offer recipes, Cooking Tips & Technique and Recommended Recipes. There's a tab bar below that help to go back, home to main page and folder icon that bring straight to cooking tips&technique. 
+- On Recipe page, theres a card list of festive occassions that give many options
+- On Cooking tips & technique, it have tips for user to learn about the basics 
+
 
 Project Setup: 
 
