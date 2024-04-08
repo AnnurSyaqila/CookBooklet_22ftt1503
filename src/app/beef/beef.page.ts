@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-beef',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./beef.page.scss'],
 })
 export class BeefPage implements OnInit {
+  constructor(private navCtrl: NavController) {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  goBack() {
+    this.navCtrl.back();
   }
-
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-cookies',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cookies.page.scss'],
 })
 export class CookiesPage implements OnInit {
+  constructor(private navCtrl: NavController) {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  goBack() {
+    this.navCtrl.back();
   }
-
 }
