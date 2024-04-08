@@ -11,29 +11,27 @@ const routes: Routes = [
   {
     path: 'cranberry',
     loadChildren: () =>
-      import('./tab2/cranberry/cranberry.module').then(
-        (m) => m.CranberryPageModule
-      ),
+      import('./cranberry/cranberry.module').then((m) => m.CranberryPageModule),
   },
   {
     path: 'cookies',
     loadChildren: () =>
-      import('./tab2/cookies/cookies.module').then((m) => m.CookiesPageModule),
+      import('./cookies/cookies.module').then((m) => m.CookiesPageModule),
   },
   {
     path: 'beef',
     loadChildren: () =>
-      import('./tab2/beef/beef.module').then((m) => m.BeefPageModule),
+      import('./beef/beef.module').then((m) => m.BeefPageModule),
   },
   {
     path: 'ketupat',
     loadChildren: () =>
-      import('./tab2/ketupat/ketupat.module').then((m) => m.KetupatPageModule),
+      import('./ketupat/ketupat.module').then((m) => m.KetupatPageModule),
   },
   {
     path: 'wajid',
     loadChildren: () =>
-      import('./tab2/wajid/wajid.module').then((m) => m.WajidPageModule),
+      import('./wajid/wajid.module').then((m) => m.WajidPageModule),
   },
 ];
 @NgModule({
