@@ -12,7 +12,7 @@
       <a href="/tabs/tab3"> Cooking Tips and Techniques</a>
     </ul>
     <ul>
-      <a href="/tabs/tab4"> Recommended Recipe</a>
+      <a href="/wajid"> Recommended Recipe</a>
     </ul>
   </ion-content>
 </ion-menu>
@@ -82,13 +82,13 @@
         <ion-col>
           <img
             src="https://houseofnasheats.com/wp-content/uploads/2021/11/Homemade-Cranberry-Sauce-4.jpg"
-            alt=""
+            (click)="navigateToCranberry()"
           />Cranberry Sauce</ion-col
         >
         <ion-col>
           <img
             src="https://saltandbaker.com/wp-content/uploads/2018/12/Soft-Gingerbread-Cookies-4-1.jpg"
-            alt=""
+            (click)="navigateToCookies()"
           />Gingerbread Cookies</ion-col
         >
       </ion-row>

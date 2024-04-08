@@ -29,4 +29,12 @@ export class Tab1Page {
     // Navigate to the popular page
     this.router.navigate(['/turkey']);
   }
+
+  navigateToCranberry() {
+    this.router.navigate(['/cranberry']);
+  }
+
+  navigateToCookies() {
+    this.router.navigate(['/cookies']);
+  }
 }
