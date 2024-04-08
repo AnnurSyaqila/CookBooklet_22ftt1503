@@ -27,14 +27,48 @@
   </ion-header>
   <ion-content class="ion-padding">
     <ion-searchbar></ion-searchbar>
-    <ion-button expand="block" (click)="showButtons()">
+    <ion-button id="buttons" expand="block" (click)="showButtons()">
       <ion-icon name="options-outline"></ion-icon>
     </ion-button>
 
     <!-- Hidden buttons initially -->
-    <ion-button expand="block" *ngIf="show" class="options">Dessert</ion-button>
-    <ion-button expand="block" *ngIf="show" class="options">Local</ion-button>
-    <ion-button expand="block" *ngIf="show" class="options">Popular</ion-button>
+
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <ion-button
+            expand="block"
+            *ngIf="show"
+            class="options"
+            (click)="navigateToDessert()"
+            >Dessert</ion-button
+          >
+        </div>
+        <div class="column">
+          <ion-button
+            expand="block"
+            *ngIf="show"
+            class="options"
+            (click)="navigateToLocal()"
+            >Local</ion-button
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <ion-button
+            expand="block"
+            *ngIf="show"
+            class="options"
+            (click)="navigateToPopular()"
+            >Popular</ion-button
+          >
+        </div>
+      </div>
+    </div>
 
     <br />
     <br />

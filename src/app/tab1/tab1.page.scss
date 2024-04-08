@@ -9,11 +9,18 @@ a{
 img{ border-radius: 30px; }
 
 
- ion-button{
-  padding-left: 85%;
+ #buttons{
+   padding-left: 85%;
   font-size: 20px;
   color: black;
   --background: #6AB29B;
+ }
+  
+ ion-button{
+  
+  --background: #6AB29B;
+  font-size: 20px;
+  color: black;
  }
 
  ion-searchbar{
@@ -26,6 +33,22 @@ img{ border-radius: 30px; }
  }
 
 
-.options{
-  align-content: center;
+
+
+/* Center the container horizontally */
+.container {
+  display: flex;
+  justify-content: center;
 }
+
+/* Make the row a flex container */
+.row {
+  display: flex;
+}
+
+/* Create two equal columns */
+.column {
+  width: 150%;
+  flex: 2; /* Each column takes equal space */
+  margin: 0 5px; /* Add margin for spacing between buttons */
+} 

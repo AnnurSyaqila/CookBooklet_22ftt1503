@@ -33,6 +33,10 @@ const routes: Routes = [
     loadChildren: () =>
       import('./wajid/wajid.module').then((m) => m.WajidPageModule),
   },
+  {
+    path: 'turkey',
+    loadChildren: () => import('./turkey/turkey.module').then( m => m.TurkeyPageModule)
+  },
 ];
 @NgModule({
   imports: [
